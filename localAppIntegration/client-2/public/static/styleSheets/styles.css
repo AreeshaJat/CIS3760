@@ -1,0 +1,347 @@
+/* body {
+    background-color: lightgrey;
+} */
+
+/* h1 {
+    color: #C20430;
+    font-size: 250%;
+    font-family: Arial;
+    text-align: center;
+}
+
+h2 {
+    color: #E1EDF1;
+    font-size: 150%;
+    font-family: Arial;
+    text-align: center;
+} */
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: auto;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
+
+  
+}
+
+.cover-container {
+  /* max-width: 42em; */
+  width: 100% !important;
+}
+
+.text-center {
+    background: linear-gradient(#000000, #C20430, #FFC72A);
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+  float: left;
+
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.nav-link {
+  margin-top: 25px;
+  font-size: 120%;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+.gryphPic {
+  height: 100px !important;
+  float: left;
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.cover-heading {
+    font-size: 300%;
+}
+
+.lead {
+    color: #FFC72A;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+/* Flexbox torture */
+.calendarParts {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.courseInputs {
+  flex: 2;
+  text-align: left;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.timetable {
+  flex: 3;
+  padding-top: 0% !important;
+  padding-right: 5%;
+}
+
+.submitButton {
+  text-align: center;
+  margin-right: 60px;
+  position: relative;
+  left: 45%;
+}
+
+.reactDiv {
+  width: 25%;
+}
+
+.masthead {
+  margin-bottom: 0% !important;
+}
+
+/* Table Styling */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #00000060;
+  color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr td:first-child {
+  background-color: #00000060;
+}
+
+.styled-table tbody tr td:not(:first-child) {
+  background-color: #FFFFFF90;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #00000060;
+}
+
+.firstCol {
+  width: 10%;
+}
+
+.courseInputFields {
+  margin-right: 10px;
+}
+
+.hereToFlex {
+  display: block;
+}
+
+.emptyDiv {
+  flex: 1;
+}
+
+.inputForm {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #00000060;
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.autocomplete-items {
+  border: 1px solid #FFC72A;
+  border-bottom: 1px solid #FFC72A;
+  border-top: none;
+  z-index: 99;
+
+  max-height: 350px;
+  overflow:hidden;
+  overflow-y:scroll;
+
+  max-width: 100%;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(12, 4, 4, 0.849);
+  border-bottom: 1px solid #5e0808;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #C20430;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.semInputs {
+  flex: 2;
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 70px;
+}
+
+.semInputForm {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #00000060;
+}
+
+.semSubmitButton {
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  text-align: center;
+}
+
+.courseAutoFill {
+  width: 100%;
+}
+
+.termSelect {
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  margin-right: 10px;
+  margin-left: 35%
+}
+
+.choiceInputs {
+  flex: 2;
+  /* text-align: center; */
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.choiceInputForm {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #00000060;
+}
+
+.choiceInputForm p{
+  margin-bottom: 5%;
+}
+
+.choiceInputButtons {
+  text-align: left;
+  margin-left: 30%;
+  margin-right: 10%;
+}
+
+.choiceInputFields {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 1%
+}
+
+.choiceInputRadio {
+  display: flex;
+  margin-left: 30%;
+}

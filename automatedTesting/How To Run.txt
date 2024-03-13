@@ -1,0 +1,14 @@
+Install:
+	pip install robotframework
+
+	pip install selenium robotframework-selenium2library webdrivermanager
+
+Check:
+	robot --version
+
+Run:
+	robot happyTrail.robot
+
+*At no point were webdrivers requested, however they were added to both the working directory and the Scripts folder inside the Python installation directory
+
+*For reference: https://www.browserstack.com/guide/robot-framework-and-selenium-tutorial

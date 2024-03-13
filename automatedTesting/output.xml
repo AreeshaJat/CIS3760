@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.8 on win32)" generated="20221121 14:51:00.314" rpa="false" schemaversion="3">
+<suite id="s1" name="happyTrail" source="C:\Users\chris\OneDrive\Desktop\cis3760\automatedTesting\happyTrail.robot">
+<test id="s1-t1" name="TEST_01: Testing Fall Courses" line="27">
+<kw name="Navigate to Homepage">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221121 14:51:00.568" level="INFO">Opening browser 'Chrome' to base url 'https://3.97.29.171/'.</msg>
+<status status="PASS" starttime="20221121 14:51:00.568" endtime="20221121 14:51:02.888"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221121 14:51:02.889" endtime="20221121 14:51:02.997"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:00.568" endtime="20221121 14:51:02.997"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//h1[text()="Welcome To Our Calendar!"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:02.997" endtime="20221121 14:51:03.021"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//p[text()="Group 202"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.021" endtime="20221121 14:51:03.037"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//h3[text()="My Calendar App"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.037" endtime="20221121 14:51:03.062"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//img[@class="gryphPic"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.062" endtime="20221121 14:51:03.079"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//a[text()="Home"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.079" endtime="20221121 14:51:03.092"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//a[text()="About"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.092" endtime="20221121 14:51:03.105"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//select[@name="terms"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.105" endtime="20221121 14:51:03.112"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.112" level="INFO">Clicking element '//select[@name="terms"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.112" endtime="20221121 14:51:03.151"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.105" endtime="20221121 14:51:03.151"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//option[@value="fall22"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.151" endtime="20221121 14:51:03.159"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.159" level="INFO">Clicking element '//option[@value="fall22"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.159" endtime="20221121 14:51:03.178"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.151" endtime="20221121 14:51:03.178"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//input[@class="semSubmitButton"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.179" endtime="20221121 14:51:03.186"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.186" level="INFO">Clicking element '//input[@class="semSubmitButton"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.186" endtime="20221121 14:51:03.222"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.178" endtime="20221121 14:51:03.222"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseOne"]</arg>
+<arg>MUSC*1160*0101</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.222" endtime="20221121 14:51:03.235"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.236" level="INFO">Typing text 'MUSC*1160*0101' into text field '//input[@id="courseOne"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.235" endtime="20221121 14:51:03.335"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.222" endtime="20221121 14:51:03.335"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="MUSC*1160*0101"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.335" endtime="20221121 14:51:03.343"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.343" level="INFO">Clicking element '//strong[text()="MUSC*1160*0101"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.343" endtime="20221121 14:51:03.369"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.335" endtime="20221121 14:51:03.369"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseTwo"]</arg>
+<arg>AGR*2150*01</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.369" endtime="20221121 14:51:03.384"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.384" level="INFO">Typing text 'AGR*2150*01' into text field '//input[@id="courseTwo"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.384" endtime="20221121 14:51:03.453"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.369" endtime="20221121 14:51:03.453"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="AGR*2150*01"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.454" endtime="20221121 14:51:03.462"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.462" level="INFO">Clicking element '//strong[text()="AGR*2150*01"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.462" endtime="20221121 14:51:03.486"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.454" endtime="20221121 14:51:03.486"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseThree"]</arg>
+<arg>MICR*3420*01</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.486" endtime="20221121 14:51:03.499"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.499" level="INFO">Typing text 'MICR*3420*01' into text field '//input[@id="courseThree"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.499" endtime="20221121 14:51:03.575"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.486" endtime="20221121 14:51:03.575"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="MICR*3420*01"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.576" endtime="20221121 14:51:03.583"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.583" level="INFO">Clicking element '//strong[text()="MICR*3420*01"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.583" endtime="20221121 14:51:03.608"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.575" endtime="20221121 14:51:03.608"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseFour"]</arg>
+<arg>FOOD*6300*01</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.608" endtime="20221121 14:51:03.622"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.623" level="INFO">Typing text 'FOOD*6300*01' into text field '//input[@id="courseFour"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.622" endtime="20221121 14:51:03.696"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.608" endtime="20221121 14:51:03.696"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="FOOD*6300*01"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.696" endtime="20221121 14:51:03.708"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.708" level="INFO">Clicking element '//strong[text()="FOOD*6300*01"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.708" endtime="20221121 14:51:03.734"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.696" endtime="20221121 14:51:03.735"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseFive"]</arg>
+<arg>CIS*1200*DE01</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.735" endtime="20221121 14:51:03.748"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.749" level="INFO">Typing text 'CIS*1200*DE01' into text field '//input[@id="courseFive"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.748" endtime="20221121 14:51:03.839"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.735" endtime="20221121 14:51:03.839"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="CIS*1200*DE01"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.840" endtime="20221121 14:51:03.847"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.847" level="INFO">Clicking element '//strong[text()="CIS*1200*DE01"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.847" endtime="20221121 14:51:03.871"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.839" endtime="20221121 14:51:03.871"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//input[@class="submitButton"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.871" endtime="20221121 14:51:03.878"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.879" level="INFO">Clicking element '//input[@class="submitButton"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.878" endtime="20221121 14:51:03.928"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.871" endtime="20221121 14:51:03.928"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="CIS*1200*DE01 (7161) Introduction to Computing"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.928" endtime="20221121 14:51:03.935"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="FOOD*6300*01 (7876) Food Science Communication"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.935" endtime="20221121 14:51:03.942"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="MUSC*1160*0101 (8739) Theory and Musicianship I"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.942" endtime="20221121 14:51:03.948"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="AGR*2150*01 (6605) Plant Ag. for Int'l Devmt"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.948" endtime="20221121 14:51:03.955"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="MICR*3420*01 (8735) Microbial Diversity &amp; Ecology"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:03.955" endtime="20221121 14:51:03.961"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseOne"]</arg>
+<arg>N/A</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:03.962" endtime="20221121 14:51:03.971"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:03.971" level="INFO">Typing text 'N/A' into text field '//input[@id="courseOne"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:03.971" endtime="20221121 14:51:04.010"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:03.961" endtime="20221121 14:51:04.011"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseTwo"]</arg>
+<arg>N/A</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.011" endtime="20221121 14:51:04.021"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.022" level="INFO">Typing text 'N/A' into text field '//input[@id="courseTwo"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.021" endtime="20221121 14:51:04.061"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.011" endtime="20221121 14:51:04.061"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseThree"]</arg>
+<arg>N/A</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.061" endtime="20221121 14:51:04.071"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.071" level="INFO">Typing text 'N/A' into text field '//input[@id="courseThree"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.071" endtime="20221121 14:51:04.112"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.061" endtime="20221121 14:51:04.112"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseFour"]</arg>
+<arg>N/A</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.113" endtime="20221121 14:51:04.123"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.123" level="INFO">Typing text 'N/A' into text field '//input[@id="courseFour"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.123" endtime="20221121 14:51:04.164"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.112" endtime="20221121 14:51:04.164"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseFive"]</arg>
+<arg>N/A</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.164" endtime="20221121 14:51:04.175"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.175" level="INFO">Typing text 'N/A' into text field '//input[@id="courseFive"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.175" endtime="20221121 14:51:04.220"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.164" endtime="20221121 14:51:04.220"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//input[@class="submitButton"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.220" endtime="20221121 14:51:04.225"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.226" level="INFO">Clicking element '//input[@class="submitButton"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.225" endtime="20221121 14:51:04.254"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.220" endtime="20221121 14:51:04.254"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:00.567" endtime="20221121 14:51:04.254"/>
+</test>
+<test id="s1-t2" name="TEST_02: Testing Winter Courses" line="84">
+<kw name="Carefully Click Element">
+<arg>//select[@name="terms"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.255" endtime="20221121 14:51:04.259"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.260" level="INFO">Clicking element '//select[@name="terms"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.259" endtime="20221121 14:51:04.289"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.255" endtime="20221121 14:51:04.289"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//option[@value="winter23"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.289" endtime="20221121 14:51:04.297"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.298" level="INFO">Clicking element '//option[@value="winter23"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.297" endtime="20221121 14:51:04.317"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.289" endtime="20221121 14:51:04.317"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//input[@class="semSubmitButton"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.317" endtime="20221121 14:51:04.322"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.322" level="INFO">Clicking element '//input[@class="semSubmitButton"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.322" endtime="20221121 14:51:04.346"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.317" endtime="20221121 14:51:04.346"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseOne"]</arg>
+<arg>ARTH*4330*01</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.347" endtime="20221121 14:51:04.357"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.357" level="INFO">Typing text 'ARTH*4330*01' into text field '//input[@id="courseOne"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.357" endtime="20221121 14:51:04.420"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.346" endtime="20221121 14:51:04.420"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="ARTH*4330*01"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.421" endtime="20221121 14:51:04.428"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.428" level="INFO">Clicking element '//strong[text()="ARTH*4330*01"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.428" endtime="20221121 14:51:04.453"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.420" endtime="20221121 14:51:04.453"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseTwo"]</arg>
+<arg>AGR*1350*0106</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.453" endtime="20221121 14:51:04.465"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.465" level="INFO">Typing text 'AGR*1350*0106' into text field '//input[@id="courseTwo"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.465" endtime="20221121 14:51:04.542"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.453" endtime="20221121 14:51:04.542"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="AGR*1350*0106"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.543" endtime="20221121 14:51:04.558"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.559" level="INFO">Clicking element '//strong[text()="AGR*1350*0106"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.558" endtime="20221121 14:51:04.582"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.542" endtime="20221121 14:51:04.582"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseThree"]</arg>
+<arg>HIST*3520*01</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.583" endtime="20221121 14:51:04.593"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.593" level="INFO">Typing text 'HIST*3520*01' into text field '//input[@id="courseThree"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.593" endtime="20221121 14:51:04.679"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.583" endtime="20221121 14:51:04.679"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="HIST*3520*01"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.679" endtime="20221121 14:51:04.686"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.687" level="INFO">Clicking element '//strong[text()="HIST*3520*01"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.686" endtime="20221121 14:51:04.709"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.679" endtime="20221121 14:51:04.710"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseFour"]</arg>
+<arg>ACCT*4220*01</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.710" endtime="20221121 14:51:04.720"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.720" level="INFO">Typing text 'ACCT*4220*01' into text field '//input[@id="courseFour"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.720" endtime="20221121 14:51:04.787"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.710" endtime="20221121 14:51:04.787"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="ACCT*4220*01"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:04.788" endtime="20221121 14:51:04.794"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.795" level="INFO">Clicking element '//strong[text()="ACCT*4220*01"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.795" endtime="20221121 14:51:04.819"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.787" endtime="20221121 14:51:04.819"/>
+</kw>
+<kw name="Carefully Input Text">
+<arg>//input[@id="courseFive"]</arg>
+<arg>ENGG*4510*0103</arg>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221121 14:51:04.819" endtime="20221121 14:51:04.829"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Element}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:04.829" level="INFO">Typing text 'ENGG*4510*0103' into text field '//input[@id="courseFive"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:04.829" endtime="20221121 14:51:05.026"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.819" endtime="20221121 14:51:05.026"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//strong[text()="ENGG*4510*0103"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:05.026" endtime="20221121 14:51:05.043"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:05.043" level="INFO">Clicking element '//strong[text()="ENGG*4510*0103"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:05.043" endtime="20221121 14:51:05.072"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:05.026" endtime="20221121 14:51:05.072"/>
+</kw>
+<kw name="Carefully Click Element">
+<arg>//input[@class="submitButton"]</arg>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:05.072" endtime="20221121 14:51:05.077"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221121 14:51:05.077" level="INFO">Clicking element '//input[@class="submitButton"]'.</msg>
+<status status="PASS" starttime="20221121 14:51:05.077" endtime="20221121 14:51:05.109"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:05.072" endtime="20221121 14:51:05.109"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="ARTH*4330*01 (1188) Art &amp; Visual Culture III"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:05.109" endtime="20221121 14:51:05.117"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="ENGG*4510*0103 (2174) Assessment &amp; Mngt of Risk"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:05.117" endtime="20221121 14:51:05.123"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="AGR*1350*0106 (1097) Dairy/Poultry/Egg Prod. &amp; Ind."]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:05.124" endtime="20221121 14:51:05.130"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="ACCT*4220*01 (1086) Advanced Financial Accounting"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:05.130" endtime="20221121 14:51:05.136"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//td[text()="HIST*3520*01 (2747) The Vikings"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221121 14:51:05.136" endtime="20221121 14:51:05.143"/>
+</kw>
+<status status="PASS" starttime="20221121 14:51:04.254" endtime="20221121 14:51:05.143"/>
+</test>
+<doc>Happy Trail Test of My Calendar Application</doc>
+<status status="PASS" starttime="20221121 14:51:00.315" endtime="20221121 14:51:05.143"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="happyTrail">happyTrail</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
